@@ -35,8 +35,9 @@
 						<li>git checkout -- &lt;file&gt;: desfaz as alterações da Working Directory, apagando todas as alterações feitas nos arquivos. ATENÇÃO, pois é o mesmo que utilizar o Ctrl+Z de tudo o que foi alterado.
 						<li>git reset retira os arquivos da INDEX, tornando-os novamente Untracked, ou seja, não mapeados pelo Git.</li>
 						<li>git commit --amend: modifica a mensagem do commit mais recente, ou seja, o último commit feito por você no projeto. Além de você mudar a mensagem do commit, você consegue adicionar arquivos que você se esqueceu ou retirar arquivos comitados por engano. O git cria um commit totalmente novo e corrigido.</li>	
-						<li>git checkout &lt;nome_da_branch&gt;: cria ou alterna entre as branchs.</li>
-						<li>git checkout -b &lt;nome_da_branch&gt;: cria e seleciona a branch nova.</li>
+						<li>git checkout &lt;nome_da_branch&gt;: cria nova branch local ou alterna entre as branchs.</li>						
+						<li>git checkout -b &lt;nome_da_branch&gt;: cria e seleciona a branch nova local.</li>
+						<li>git push --set-upstream origin &lt;nome_da_branch&gt;: cria a nova branch local no repositório remoto.</li>
 						<li>git branch -d &lt;nome_da_branch&gt;: deleta a branch.</li>
 					</ul>
 				</div>
