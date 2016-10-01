@@ -1,17 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
-		<style>
-			body{
-				background: "#EBC79E";
-				font-family: Georgia, Courier, Sans-Serif;
-			}
-		</style>
+
+		<!-- Responsive -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 	<body>
-		<div>
-			<h1>Git</h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<h1>Git</h1>
+					<h3>Comandos básicos do Git</h3>
+					<ul>
+						<li>git status: mostra o estado do repositório e das alterações</li>
+						<li>git add &lt;file&gt;: prepara os arquivos para o versionamento, encaminhando-os para a INDEX, que é uma área temporária, antes da confirmação final, adicionando ou atualizando os arquivos que estão na Working Directory, que é a pasta de trabalho.</li>
+						<li>git commit -m "comentário": confirma as alterações no repositório local, os arquivos antes na área temporária, INDEX, no modo stage ou tracked, foram encaminhados para o HEAD, que é o repositório local.</li>						
+						<li>git push: publica as alterações no repositório remoto, no serviço GitHub.</li>
+					</ul>
+					<h3>Outros comandos</h3>
+					<ul>
+						<li>git checkout -- &lt;file&gt;: desfaz as alterações da Working Directory, apagando todas as alterações feitas nos arquivos. ATENÇÃO, pois é o mesmo que utilizar o Ctrl+Z de tudo o que foi alterado.
+						<li>git reset retira os arquivos da INDEX, tornando-os novamente Untracked, ou seja, não mapeados pelo Git.</li>
+						<li>git commit --amend: modifica a mensagem do commit mais recente, ou seja, o último commit feito por você no projeto. Além de você mudar a mensagem do commit, você consegue adicionar arquivos que você se esqueceu ou retirar arquivos comitados por engano. O git cria um commit totalmente novo e corrigido.</li>						
+					</ul>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
