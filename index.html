@@ -18,43 +18,47 @@
 	<body>
 		<div class="container">
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-lg-12">
 					
 					<h1>Git - Controlador de Versão</h1>
 
 					<h3>Comandos básicos do Git</h3>
-					<ul>
-						<li>git config --global user.name "nome_usuario_github": seta o nome de usuário do GitHub.</li>
-						<li>git config --global user.email "email_conta_github": seta o email da conta do GitHub.</li>
-						<li>git status: mostra o estado do repositório e das alterações</li>
-						<li>git add &lt;file&gt;: prepara os arquivos para o versionamento, encaminhando-os para a INDEX, que é uma área temporária, antes da confirmação final, adicionando ou atualizando os arquivos que estão na Working Directory, que é a pasta de trabalho.</li>
-						<li>git commit -m "comentário": confirma as alterações no repositório local, os arquivos antes na área temporária, INDEX, no modo stage ou tracked, foram encaminhados para o HEAD, que é o repositório local.</li>						
-						<li>git push: publica as alterações no repositório remoto, no serviço GitHub.</li>
-						<li>git pull: atualiza o repositório local trazendo todas as alterações do repositório remoto.
-					</ul>
+					<dl>
+						<dt>git config --global user.name "nome_usuario_github":</dt><dd> seta o nome de usuário do GitHub. Configurações alocadas no arquivo localizado em C:\Program Files\Git\.gitconfig</dd>
+						<dt>git config --global user.email "email_conta_github":</dt><dd> seta o email da conta do GitHub. Configurações alocadas no arquivo localizado em C:\Program Files\Git\.gitconfig</dd>
+						<dt>git status:</dt><dd> mostra o estado do repositório e das alterações</dd>
+						<dt>git add &lt;file&gt;:</dt><dd> prepara os arquivos para o versionamento, encaminhando-os para a INDEX, que é uma área temporária, antes da confirmação final, adicionando ou atualizando os arquivos que estão na Working Directory, que é a pasta de trabalho.</dd>
+						<dt>git commit -m "comentário":</dt><dd> confirma as alterações no repositório local, os arquivos antes na área temporária, INDEX, no modo stage ou tracked, foram encaminhados para o HEAD, que é o repositório local.</dd>						
+						<dt>git push:</dt><dd> publica as alterações no repositório remoto, no serviço GitHub.</dd>
+						<dt>git pull:</dt><dd> atualiza o repositório local trazendo todas as alterações do repositório remoto.
+					</dl>
 					<h3>Outros comandos</h3>
-					<ul>
-						<li>git checkout -- &lt;file&gt;: desfaz as alterações da Working Directory, apagando todas as alterações feitas nos arquivos. ATENÇÃO, pois é o mesmo que utilizar o Ctrl+Z de tudo o que foi alterado.
-						<li>git reset retira os arquivos da INDEX, tornando-os novamente Untracked, ou seja, não mapeados pelo Git.</li>
-						<li>git commit --amend: modifica a mensagem do commit mais recente, ou seja, o último commit feito por você no projeto. Além de você mudar a mensagem do commit, você consegue adicionar arquivos que você se esqueceu ou retirar arquivos comitados por engano. O git cria um commit totalmente novo e corrigido.</li>	
-						<li>git checkout &lt;nome_da_branch&gt;: cria nova branch local ou alterna entre as branchs.</li>						
-						<li>git checkout -b &lt;nome_da_branch&gt;: cria e seleciona a branch nova local.</li>
-						<li>git push --set-upstream origin &lt;nome_da_branch&gt;: cria a nova branch local no repositório remoto.</li>
-						<li>git branch -d &lt;nome_da_branch&gt;: deleta a branch.</li>
-						<li>git diff &lt;branch_origem&gt; &lt;branch_destino&gt;: pré-visualiza antes de fazer o merge.</li>
-					</ul>
+					<dl>
+						<dt>git checkout -- &lt;file&gt;:</dt><dd> desfaz as alterações da Working Directory, apagando todas as alterações feitas nos arquivos. ATENÇÃO, pois é o mesmo que utilizar o Ctrl+Z de tudo o que foi alterado.
+						<dt>git reset:</dt><dd> retira os arquivos da INDEX, tornando-os novamente Untracked, ou seja, não mapeados pelo Git.</dd>
+						<dt>git commit --amend:</dt><dd> modifica a mensagem do commit mais recente, ou seja, o último commit feito por você no projeto. Além de você mudar a mensagem do commit, você consegue adicionar arquivos que você se esqueceu ou retirar arquivos comitados por engano. O git cria um commit totalmente novo e corrigido.</dd>	
+						<dt>git checkout &lt;nome_da_branch&gt;:</dt><dd> cria nova branch local ou alterna entre as branchs.</dd>						
+						<dt>git checkout -b &lt;nome_da_branch&gt;:</dt><dd> cria e seleciona a branch nova local.</dd>
+						<dt>git push --set-upstream origin &lt;nome_da_branch&gt;:</dt><dd> cria a nova branch local no repositório remoto.</dd>
+						<dt>git branch -d &lt;nome_da_branch&gt;:</dt><dd> deleta a branch.</dd>
+						<dt>git diff &lt;branch_origem&gt; &lt;branch_destino&gt;:</dt><dd> pré-visualiza antes de fazer o merge.</dd>
+					</dl>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-12">
+				<div class="col-lg-12">
 					<h3>Aprendi aqui:</h3>
 					<hr />
 					<div class="row">
-						<div class="col-xs-6">
-							<a href="http://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar" target="_blank"><img src="img1.png" alt="Tudo sobre Git e GitHub" /></a>
+						<div class="col-lg-6">
+							<a href="http://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar" target="_blank">
+								<img src="img1.png" class=".img-responsive width: 100% \9;" alt="Tudo sobre Git e GitHub" />
+							</a>
 						</div>
-						<div class="col-xs-6">
-							<a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html" target="_blank"><img src="img2.png" width="250" height="50" alt="Git - Guia Prático" /></a>
+						<div class="col-lg-6">
+							<a href="http://rogerdudler.github.io/git-guide/index.pt_BR.html" target="_blank">
+								<img src="img2.png" class=".img-responsive width: 100% \9;" alt="Git - Guia Prático" />
+							</a>
 						</div>
 					</div>
 				</div>
