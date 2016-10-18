@@ -26,6 +26,7 @@
 					<dl>
 						<dt>git config --global user.name "nome_usuario_github":</dt><dd> seta o nome de usuário do GitHub. Configurações alocadas no arquivo localizado em C:\Program Files\Git\.gitconfig</dd>
 						<dt>git config --global user.email "email_conta_github":</dt><dd> seta o email da conta do GitHub. Configurações alocadas no arquivo localizado em C:\Program Files\Git\.gitconfig</dd>
+						<dt>git config --list</dt><dd>lista as configurações do git</dd>
 						<dt>git status:</dt><dd> mostra o estado do repositório e das alterações</dd>
 						<dt>git add &lt;file&gt;:</dt><dd> prepara os arquivos para o versionamento, encaminhando-os para a INDEX, que é uma área temporária, antes da confirmação final, adicionando ou atualizando os arquivos que estão na Working Directory, que é a pasta de trabalho.</dd>
 						<dt>git commit -m "comentário":</dt><dd> confirma as alterações no repositório local, os arquivos antes na área temporária, INDEX, no modo stage ou tracked, foram encaminhados para o HEAD, que é o repositório local.</dd>						
@@ -34,6 +35,11 @@
 					</dl>
 					<h3>Outros comandos</h3>
 					<dl>
+						<dt>git init</dt><dd>é executado dentro de uma nova pasta para a criação do novo repositório</dd>
+						<dt>git remote add &lt;nome_curto&gt; &lt;servidor&gt;</dt><dd>adiciona o repositório local ao remoto. ATENÇÃO: Deve-se primeiro criar o repositório no GitHub.<br />
+						Exemplo: <i>git remote add origin https://github.com/User/nome_repositorio.git</i></dd>
+						<dt>git remote -v</dt><dd>lista a configuração atual do repositório remoto</dd>
+						<dt>git remote show &lt;alias&gt;</dt><dd>exibe algumas informações do repositório remoto</dd>
 						<dt>git checkout -- &lt;file&gt;:</dt><dd> desfaz as alterações da Working Directory, apagando todas as alterações feitas nos arquivos. ATENÇÃO, pois é o mesmo que utilizar o Ctrl+Z de tudo o que foi alterado.
 						<dt>git reset:</dt><dd> retira os arquivos da INDEX, tornando-os novamente Untracked, ou seja, não mapeados pelo Git.</dd>
 						<dt>git commit --amend:</dt><dd> modifica a mensagem do commit mais recente, ou seja, o último commit feito por você no projeto. Além de você mudar a mensagem do commit, você consegue adicionar arquivos que você se esqueceu ou retirar arquivos comitados por engano. O git cria um commit totalmente novo e corrigido.</dd>	
